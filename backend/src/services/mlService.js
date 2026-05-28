@@ -6,8 +6,8 @@ const getPrediction = async (data) => {
 
         const response = await axios.post(
 
-            'http://127.0.0.1:5001/predict',
-
+            // 'http://127.0.0.1:5001/predict',
+              'https://mini-project-ml-1.onrender.com/predict',
             data
 
         );
