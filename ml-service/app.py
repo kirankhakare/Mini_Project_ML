@@ -16,6 +16,9 @@ lr_model = joblib.load('logistic_model.pkl')
 
 rf_model = joblib.load('rf_model.pkl')
 
+@app.route('/')
+def home():
+    return "ML API Running Successfully"
 
 @app.route('/predict', methods=['POST'])
 
